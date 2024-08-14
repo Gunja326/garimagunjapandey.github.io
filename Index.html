@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Developer Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .profile-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+            overflow: hidden;
+            width: 350px;
+            text-align: center;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .profile-img img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            border: 4px solid #fff;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-card:hover .profile-img img {
+            transform: scale(1.1);
+        }
+
+        .profile-info h1 {
+            margin: 20px 0 10px;
+            font-size: 28px;
+            color: #fff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-info p {
+            margin: 10px 0;
+            color: #dcdcdc;
+            font-size: 15px;
+        }
+
+        .social-icons {
+            margin: 15px 0;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover img {
+            transform: scale(1.2);
+        }
+
+        .profile-info button {
+            background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 16px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .profile-info button:hover {
+            background: linear-gradient(135deg, #ff4b2b 0%, #ff416c 100%);
+            transform: scale(1.05);
+        }
+
+        /* Keyframes for animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-img">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocLRCWmmrr0O1qRaSqA7mJEMBUliDjCXpK6i-qcwU7ntIXdcBiI=s432-c-no" alt="Profile Picture">
+            </div>
+            <div class="profile-info">
+                <h1>Gunja Pandey</h1>
+                <p>Software Developer</p>
+                <p>I am a highly skilled and experienced Software Developer with over 3 years of experience in designing, developing, and deploying robust applications across various industries. </p>
+                <div class="social-icons">
+                    <a href="https://linkedin.com" target="_blank">
+                        <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAdVBMVEUKZsL///8AY8Hy9foVaMMAU7y7yucAX8AAWL73+fyWr91Wh81ci851m9UAYcB8otgAXL8/esgATruIq9vU4PLl7PfI1u0wdcdOgsve5vSuveLs8flEeMgAS7pHfsrD0eo2bMSrwuWOp9mdt+BvlNJZgMszcMV4Q6RPAAADsElEQVR4nO2c63LqIBRGAwFzU8QYbydWTaN5/0c86cV6KduxjRDpfGum4x8mw+qWDdmAQQAAAAAAAAAAAAAAAAAAAAAAAAC4gn/Sdz+6o1Swa5ZZNtkJrvz24arZVyV7IynSpVB9d6gDajcu2ImkynTfXfotQq8H7JLZq6c2IloX7Bt13He/foVSBhfGUtl3x35DvjW5sHDvYWz0KDHKsMLDlCZXZhcWvsai7879ED0KCRk2927ylNdZ+cRsGPXdux8SzUmZ0LfJhi+MefkD3+YataTGf8s/zzLA35LZ3JKRfslwcWPMpJ6NmSCms1k58iybBXFNrGba9czEtwWNmswomYF362aRU0uAcujbt6wNTVOaZSrvAtOGRo7NI8bPqoasDS6rg/ZrkjkSpd8yWnHwbPY/ofZXU2e19jQub6hmfJahB4fAy/FyhCu1mW5XZVlUo53yWuUdpWWe5zKOfHtZJhDC35ECgMeIvzH2hOBKx1LKONYR91tJxS96M07rqqrTcRa8yChw7MMjM/yeVueNdL6oizJMWlj7F5ZlNYyl0wmYi8zM5LyjfGFuJL4aaTkyFHqSQZM7LPJyQRQBtueFptj0mtByNFZ6TNUSik3kLDpcENsAgwuZ728JZzKK36olsqpxFZwHyEQNEbcjs6GjtWt3mSija29Hpm5eKjrLRMNbX7EjtZOSQleZaEgW3s5J6sDBq0VHGb25y6W1eXUQmm4y6xs7b1eEe/tFxW4yi/Rel3bCWVuPTTeZ5f0ubUqzPmq6yfyI5GA7NA5lWGU7NC5lWGPZxqlMajmhOZUJLW+TOJVhG7vrZ7cytd3d+AfKJCWxCXeifPFCZj4SuiXY317fxFbz2WNkKp1/FDe4fmlunJNgdnd9HyFTZpJ/NRaRruimqdUduQfIFOvLf7cS9Im8rdUM0F1mtbzeM9R0fWNlNQN0ljEdsdFk8zK36NJdpjJstdHH2EKr6ayrzMw4qWtq1IRWj+R2lRkYD6WR7UPxxDKh+VBaNCQWA08tM9PGzvEFMWieWmZOpNqYWAY8tUxlngRF7qPM1HwoVUjzRZanlkmIyp6g7hg8tQxx+QEykIEMZCADGchABjKQgQxkIAMZyEAGMpCBDGQgAxnIQAYykIEMZCADGcj0I9Pl0ikjZYgTGolVmSDYj4xk55dd1HJ8wfTIgrgSozLzU/dWVd5+2YSrdz4/Pj+vLmpT0E89f+bXxx/5tREAAAAAAAAAAAAAAAAAAAAAAADAFf8BTbVVnh054DkAAAAASUVORK5CYII=" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/Gunja326" target="_blank">
+                        <img src="data:image/png;base64,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" alt="GitHub">
+                    </a>                </div>
+                <button onclick="contactMe()">Contact Me</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function contactMe() {
+            alert('Contact me at johndoe@example.com');
+        }
+    </script>
+</body>
+</html>
